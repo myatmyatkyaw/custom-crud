@@ -29,26 +29,7 @@
                             <td>{{ $student->roll_no }}</td>
                             <td>{{ $student->email }}</td>
                             <td>{{ $student->age }}</td>
-                            <td >
-                                
-                                        <a href="{{ route('student.edit',$student->id) }}" class="btn btn-outline-warning" >
-                                          <i class="fas fa-pencil-alt"> </i>  
-                                        </a>
-    
-                                        <a href="{{ route('student.show',$student->id) }}" class="btn btn-outline-info" >
-                                          <i class="fas fa-info"> </i>  
-                                        </a>
-                                    
-                                        <form action="{{ route('student.destroy',$student->id) }}" method="post" class="d-inline-block">
-                                          @method('delete')
-                                          @csrf
-                                         
-                                           <button class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button>
-                                              
-                                       
-                                        </form>
-                                   
-                            </td>
+                           
                           </tr>
                      
                     </tbody>

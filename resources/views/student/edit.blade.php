@@ -15,7 +15,7 @@
                             <label class="form-label">Name<small class="text-danger">*</small></label>
                             <input type="text" name="name" value="{{ $student->name }}" class="form-control @error('name') is-invalid
                                 
-                            @enderror" value="{{ old('name') }}">
+                            @enderror" >
                             @error('name')
                             <div class="text-danger">
                                 {{ $message }}
@@ -26,7 +26,7 @@
                             <label class="form-label">Roll Number<small class="text-danger">*</small></label>
                             <input type="number" name="roll_no" value="{{ $student->roll_no }}" class="form-control @error('roll_no') is-invalid
                                 
-                            @enderror" value="{{ old('roll_no') }}">
+                            @enderror" >
                             @error('roll_no')
                             <div class="text-danger">
                                 {{ $message }}
@@ -37,7 +37,7 @@
                             <label class="form-label">Email<small class="text-danger">*</small></label>
                             <input type="email" name="email" value="{{ $student->email }}" class="form-control @error('email') is-invalid
                                 
-                            @enderror" value="{{ old('email') }}">
+                            @enderror" >
                             @error('email')
                             <div class="text-danger">
                                 {{ $message }}
@@ -48,7 +48,7 @@
                             <label class="form-label">Age<small class="text-danger">*</small></label>
                             <input type="number" name="age" value="{{ $student->age }}" class="form-control @error('age') is-invalid
                                 
-                            @enderror" value="{{ old('age') }}">
+                            @enderror" >
                             @error('age')
                             <div class="text-danger">
                                 {{ $message }}
